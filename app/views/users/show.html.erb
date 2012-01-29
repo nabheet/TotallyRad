@@ -1,0 +1,21 @@
+<h1>Showing user</h1>
+
+<label>
+  <span class="description">User Name:</span>
+  <span><%= @user.name %> </span>
+</label>
+<label>
+  <span class="description">Operator:</span>
+  <span><%= @user.operator %> </span>
+</label>
+<label>
+  <span class="description">Password:</span>
+  <span><%= @user.password %> </span>
+</label>
+<label>
+  <span class="description">Password Type:</span>
+  <span><%= @user.password_type %> </span>
+</label>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

@@ -1,0 +1,16 @@
+<label>
+  <span class="description">User Name:</span>
+  <%= text_field(:user, :name) %>
+</label>
+<label>
+  <span class="description">Operator:</span>
+  <%= select(:user, :operator, { ":=" => ":="}, {:include_blank => '- select -'}) %>
+</label>
+<label>
+  <span class="description">Password:</span>
+  <%= text_field(:user, :password) %>
+</label>
+<label>
+  <span class="description">Password Type:</span>
+  <%= select(:user, :password_type, { "Cleartext-Password" => "Cleartext-Password"}, {:include_blank => '- select -'}) %>
+</label>
