@@ -2,13 +2,15 @@ body { background-color: #fff; color: #333; }
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
+  font-size:   12px;
+  line-height: 14px;
+  width: 1000px;
 }
 
 table {
-    border: 2px solid #000000;
+    border: .1em solid #000000;
     border-collapse: collapse;
+    margin: .1em;
 }
 
 th {
@@ -16,7 +18,8 @@ th {
 }
 
 td, th {
-    border: 1px solid #000000;
+    border: .1em solid #000000;
+    padding: .3em;
 }
 
 label {
@@ -34,10 +37,49 @@ label span {
 label input {
 }
 
+#header {
+    width: 100%;
+}
+
+#topNav {
+    width: 100%;
+    height: 2em;
+    background-color: #e0ffff;
+}
+
+#topNav ul {
+    display: inline;
+    list-style-type: none;
+}
+
+#topNav ul li {
+    display: inline-block;
+    width: 4em;
+}
+
+#leftNav {
+    width: 20em;
+    background-color: #e0ffff;
+    display: inline-block;
+}
+
+#leftNav ul {
+    list-style-type: none;
+}
+
+#leftNav ul li {
+}
+
+#content {
+    margin-top: 3em;
+    display: inline-block;
+    width: 50em;
+    background-color: red;
+}
+
 pre {
   background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
+  padding: 1em;
 }
 
 a { color: #000; }
