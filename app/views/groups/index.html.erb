@@ -1,0 +1,23 @@
+<h1>Listing groups</h1>
+
+<table>
+  <tr>
+    <th>Group Name</th>
+    <th>Operator</th>
+    <th>Password</th>
+    <th>Password Type</th>
+    <th>Action</th>
+  </tr>
+
+<% @groups.each do |group| %>
+  <tr>
+     <td><%= group.name %></td>
+    <td><%= group.operator %></td>
+    <td><%= group.password %></td>
+    <td><%= group.password_type %></td>
+    <td><%= link_to 'Show', group %>
+    <%= link_to 'Edit', edit_group_path(group) %>
+    <%= link_to 'Destroy', group, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

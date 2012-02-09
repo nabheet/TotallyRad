@@ -1,0 +1,23 @@
+<h1>Listing Auth Denials</h1>
+
+<table>
+  <tr>
+    <th>User Name</th>
+    <th>Password</th>
+    <th>Status</th>
+    <th>Called Station Id</th>
+    <th>Calling Station Id</th>
+    <th>Auth Timestamp</th>
+  </tr>
+
+<% @auth_statuses.each do |auth_status| %>
+  <tr>
+    <td><%= auth_status.name %></td>
+    <td><%= auth_status.password %></td>
+    <td><%= auth_status.status %></td>
+    <td><%= auth_status.calledstationid %></td>
+    <td><%= auth_status.callingstationid %></td>
+    <td><%= auth_status.authdate %></td>
+  </tr>
+<% end %>
+</table>

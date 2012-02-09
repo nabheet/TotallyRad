@@ -31515,3 +31515,212 @@ Rendering users/index
 Rendered layouts/_topNav (0.0ms)
 Rendered layouts/_userLeftNav (0.1ms)
 Completed in 16ms (View: 9, DB: 3) | 200 OK [http://localhost/Users]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-02-09 00:38:11) [GET]
+  [4;36;1mUser Load (3.3ms)[0m   [0;1mSELECT * FROM "radcheck" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered layouts/_topNav (0.1ms)
+Rendered layouts/_userLeftNav (0.1ms)
+Completed in 18ms (View: 11, DB: 4) | 200 OK [http://localhost/Users]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-02-09 00:38:12) [GET]
+  [4;36;1mUser Load (2.1ms)[0m   [0;1mSELECT * FROM "radcheck" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered layouts/_topNav (0.0ms)
+Rendered layouts/_userLeftNav (0.1ms)
+Completed in 14ms (View: 9, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-02-09 00:38:13) [GET]
+  [4;36;1mUser Load (1.9ms)[0m   [0;1mSELECT * FROM "radcheck" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered layouts/_topNav (0.1ms)
+Rendered layouts/_userLeftNav (0.2ms)
+Completed in 16ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-02-09 00:38:14) [GET]
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM "radcheck" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered layouts/_topNav (0.1ms)
+Rendered layouts/_userLeftNav (0.1ms)
+Completed in 14ms (View: 9, DB: 3) | 200 OK [http://localhost/Users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-02-09 00:38:15) [GET]
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM "radcheck" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered layouts/_topNav (0.0ms)
+Rendered layouts/_userLeftNav (0.1ms)
+Completed in 14ms (View: 9, DB: 3) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-02-09 00:38:16) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Rendered users/_user (0.7ms)
+Rendered layouts/_topNav (0.0ms)
+Rendered layouts/_userLeftNav (0.1ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-02-09 00:38:17) [GET]
+  [4;35;1mUser Load (2.2ms)[0m   [0mSELECT * FROM "radcheck" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered layouts/_topNav (0.1ms)
+Rendered layouts/_userLeftNav (0.1ms)
+Completed in 14ms (View: 9, DB: 3) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-02-09 00:38:18) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Rendered users/_user (0.7ms)
+Rendered layouts/_topNav (0.1ms)
+Rendered layouts/_userLeftNav (0.2ms)
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-02-09 00:38:20) [GET]
+  [4;36;1mUser Load (2.1ms)[0m   [0;1mSELECT * FROM "radcheck" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered layouts/_topNav (0.2ms)
+Rendered layouts/_userLeftNav (3.4ms)
+Completed in 47ms (View: 41, DB: 3) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2012-02-09 00:38:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM "radcheck" WHERE ("radcheck"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_user (0.9ms)
+Rendered layouts/_topNav (0.0ms)
+Rendered layouts/_userLeftNav (0.1ms)
+Completed in 15ms (View: 5, DB: 3) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-02-09 00:38:26) [GET]
+  [4;36;1mUser Load (3.3ms)[0m   [0;1mSELECT * FROM "radcheck" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered layouts/_topNav (0.0ms)
+Rendered layouts/_userLeftNav (0.1ms)
+Completed in 15ms (View: 8, DB: 4) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2012-02-09 00:38:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "radcheck" WHERE ("radcheck"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_user (0.8ms)
+Rendered layouts/_topNav (0.0ms)
+Rendered layouts/_userLeftNav (0.2ms)
+Completed in 15ms (View: 5, DB: 2) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-02-09 00:38:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT * FROM "radcheck" WHERE ("radcheck"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+  [4;35;1mAuthStatus Load (2.6ms)[0m   [0mSELECT * FROM radpostauth WHERE username = 'test' ORDER BY authdate DESC[0m
+Rendered layouts/_topNav (0.0ms)
+Rendered layouts/_userLeftNav (0.1ms)
+Completed in 21ms (View: 8, DB: 5) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AuthStatusesController#index (for 127.0.0.1 at 2012-02-09 00:39:04) [GET]
+  [4;35;1mAuthStatus Load (2.7ms)[0m   [0mSELECT * FROM radpostauth WHERE reply = 'Access-Reject' ORDER BY authdate DESC[0m
+Rendering template within layouts/auth_statuses
+Rendering auth_statuses/index
+Rendered layouts/_topNav (0.1ms)
+Completed in 46ms (View: 7, DB: 3) | 200 OK [http://localhost/auth_statuses]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing GroupsController#index (for 127.0.0.1 at 2012-02-09 00:39:07) [GET]
+  [4;35;1mGroup Load (3.3ms)[0m   [0mSELECT * FROM "radgroupcheck" [0m
+Rendering template within layouts/groups
+Rendering groups/index
+Rendered layouts/_topNav (0.0ms)
+Rendered layouts/_groupLeftNav (0.1ms)
+Completed in 17ms (View: 11, DB: 4) | 200 OK [http://localhost/Groups]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing GroupsController#new (for 127.0.0.1 at 2012-02-09 00:39:11) [GET]
+Rendering template within layouts/groups
+Rendering groups/new
+Rendered groups/_group (0.7ms)
+Rendered layouts/_topNav (0.0ms)
+Rendered layouts/_groupLeftNav (0.1ms)
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/groups/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-02-09 00:39:14) [GET]
+  [4;36;1mUser Load (3.2ms)[0m   [0;1mSELECT * FROM "radcheck" [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered layouts/_topNav (0.0ms)
+Rendered layouts/_userLeftNav (0.1ms)
+Completed in 15ms (View: 8, DB: 4) | 200 OK [http://localhost/Users]

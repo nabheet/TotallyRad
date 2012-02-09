@@ -1,0 +1,2 @@
+module AuthstatusesHelper
+end
