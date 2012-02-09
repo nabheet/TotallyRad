@@ -17,5 +17,31 @@
   <span><%= @user.password_type %> </span>
 </label>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="buttonPanel">
+    <%= link_to 'Edit', edit_user_path(@user) %>
+    <%= link_to 'Back', users_path %>
+</div>
+
+<h1>Listing Auth History</h1>
+
+<table>
+  <tr>
+    <th>User Name</th>
+    <th>Password</th>
+    <th>Status</th>
+    <th>Called Station Id</th>
+    <th>Calling Station Id</th>
+    <th>Auth Timestamp</th>
+  </tr>
+
+<% AuthStatus.find_by_sql(["SELECT * FROM radpostauth WHERE username = ? ORDER BY authdate DESC", @user.name]).each do |auth_status| %>
+  <tr>
+    <td><%= auth_status.name %></td>
+    <td><%= auth_status.password %></td>
+    <td><%= auth_status.status %></td>
+    <td><%= auth_status.calledstationid %></td>
+    <td><%= auth_status.callingstationid %></td>
+    <td><%= auth_status.authdate %></td>
+  </tr>
+<% end %>
+</table>

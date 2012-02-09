@@ -7,10 +7,10 @@
   <%= stylesheet_link_tag 'scaffold' %>
 </head>
 <body>
-    <div>
+    <div id="pageBody">
         <div id="header"><img src="/images/totallyRad.png" alt="Totally Rad"></div>
         <div id="topNav"><%= render "layouts/topNav" %></div>
-        <p style="color: green"><%= notice %></p>
+        <div id="notice"><%= notice %></div>
         <div id="leftNav"><%= render "layouts/userLeftNav" %></div>
         <div id="content">
             <%= yield %>

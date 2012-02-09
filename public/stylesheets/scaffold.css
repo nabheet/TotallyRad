@@ -1,14 +1,19 @@
 body {
-    background-color: #fff; color: #333;
+    color: #333;
     font-family: verdana, arial, helvetica, sans-serif;
     font-size:   12px;
     line-height: 14px;
-    width: 1000px;
+    width: 55em;
 }
 
 body, div, p, ol, ul, td {
     margin: 0;
     padding: 0;
+    vertical-align: top;
+}
+
+#pageBody {
+    background-color: #0698fd;
 }
 
 h1, h2{
@@ -41,6 +46,7 @@ label span.description {
 
 label span {
     display: inline-block;
+    width: 25%;
 }
 
 label input {
@@ -51,9 +57,8 @@ label input {
 }
 
 #topNav {
-    width: 100%;
     height: 2em;
-    background-color: #e0ffff;
+    background-color: #6666ff;
     padding: .5em;
     margin-bottom: .5em;
 }
@@ -64,16 +69,27 @@ label input {
 
 #topNav ul li {
     display: inline-block;
-    width: 4em;
+    border: #7c7373 outset;
+    background-color: #7c7373;
+    text-align: center;
+    padding: .2em .1em .2em .1em;
+    margin-right: .5em;
+}
+
+#topNav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+#notice {
+    color: green;
 }
 
 #leftNav {
     width: 10em;
     padding: .5em;
-    margin-right: 1em;
-    background-color: #e0ffff;
-    float: left;
-    height: 200px;
+    background-color: #6666ff;
+    display: inline-block;
 }
 
 #leftNav ul {
@@ -81,11 +97,34 @@ label input {
 }
 
 #leftNav ul li {
-    margin: 1em;
+    padding-left: 1em;
+    margin-top: .5em;
+    background-color: #f5f5f5;
+    width: 80%;
+}
+
+#leftNav ul li a {
+    text-decoration: none;
 }
 
 #content {
+    width: 42.7em;
+    margin-left: .2em;
+    padding: .5em;
+    background-color: #6666ff;
+    display: inline-block;
+}
 
+#noLeftNavContent {
+    margin-left: .2em;
+    padding: .5em;
+    background-color: #6666ff;
+    display: block;
+}
+
+#content .buttonPanel a, #content .buttonPanel input {
+    float: right;
+    margin-right: 2em;
 }
 
 pre {
@@ -94,7 +133,7 @@ pre {
 }
 
 a { color: #000; }
-a:visited { color: #666; }
+a:visited { color: #000; }
 a:hover { color: #fff; background-color:#000; }
 
 .fieldWithErrors {
@@ -106,8 +145,7 @@ a:hover { color: #fff; background-color:#000; }
 #errorExplanation {
   width: 400px;
   border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 12px;
+  padding: 7px 7px 7px 12px;
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }

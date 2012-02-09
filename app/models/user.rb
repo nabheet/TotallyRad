@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
   alias_attribute :operator, :op
   alias_attribute :password, :value
   alias_attribute :password_type, :attribute
+
+  #named_scope :history, find_by_sql(["SELECT * FROM radpostauth WHERE username = '?' ORDER BY authdate DESC", :name])
 end
