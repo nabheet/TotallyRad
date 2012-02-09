@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -8,14 +7,14 @@
   <%= stylesheet_link_tag 'scaffold' %>
 </head>
 <body>
-<div>
-    <div id="header"><img src="/images/totallyRad.png" alt="Totally Rad"></div>
-    <div id="topNav"><%= render "layouts/topNav" %></div>
-    <p style="color: green"><%= notice %></p>
-    <div id="leftNav"><%= render "layouts/userLeftNav" %></div>
-    <div id="content">
-    <%= yield %>
-     </div>
+    <div>
+        <div id="header"><img src="/images/totallyRad.png" alt="Totally Rad"></div>
+        <div id="topNav"><%= render "layouts/topNav" %></div>
+        <p style="color: green"><%= notice %></p>
+        <div id="leftNav"><%= render "layouts/userLeftNav" %></div>
+        <div id="content">
+            <%= yield %>
+        </div>
 </div>
 </body>
 </html>
