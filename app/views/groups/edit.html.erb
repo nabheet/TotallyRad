@@ -1,12 +1,12 @@
-<h1>Editing group</h1>
+<h2>Editing group</h2>
 
 <% form_for(@group) do |f| %>
     <%= f.error_messages %>
-    <%= render "group" %>
+    <%= render :partial => "group", :locals => { :editable => true } %>
 
     <div class="buttonPanel">
         <%= f.submit 'Update' %>
-        <%= link_to 'Show', @group %> |
+        <%= link_to 'Show', @group %>
         <%= link_to 'Back', groups_path %>
     </div>
 <% end %>

@@ -1,8 +1,8 @@
-<h1>Editing user</h1>
+<h2>Editing user</h2>
 
 <% form_for(@user) do |f| %>
     <%= f.error_messages %>
-    <%= render "user" %>
+    <%= render :partial => "user", :locals => { :editable => true } %>
 
     <div class="buttonPanel">
         <%= f.submit 'Update' %>

@@ -1,16 +1,16 @@
 <label>
-  <span class="description">User Name:</span>
-  <%= text_field(:group, :name) %>
+  <span class="description">Group Name:</span>
+  <%= (editable) ? text_field(:group, :name) : content_tag(:span, @group.name) %>
 </label>
 <label>
   <span class="description">Operator:</span>
-  <%= select(:group, :operator, { ":=" => ":="}, {:include_blank => '- select -'}) %>
+  <%= (editable) ? select(:group, :operator, { ":=" => ":="}, {:include_blank => '- select -'}) : content_tag(:span, @group.operator) %>
 </label>
 <label>
   <span class="description">Password:</span>
-  <%= text_field(:group, :password) %>
+  <%= (editable) ? text_field(:group, :password) : content_tag(:span, @group.password) %>
 </label>
 <label>
   <span class="description">Password Type:</span>
-  <%= select(:group, :password_type, { "Cleartext-Password" => "Cleartext-Password"}, {:include_blank => '- select -'}) %>
+  <%= (editable) ? select(:group, :password_type, { "Cleartext-Password" => "Cleartext-Password"}, {:include_blank => '- select -'}) : content_tag(:span, @group.password_type) %>
 </label>

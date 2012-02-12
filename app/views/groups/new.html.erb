@@ -1,8 +1,8 @@
-<h1>New group</h1>
+<h2>New group</h2>
 
 <% form_for(@group) do |f| %>
     <%= f.error_messages %>
-    <%= render "group" %>
+    <%= render :partial => "group", :locals => { :editable => true } %>
 
     <div class="buttonPanel">
         <%= f.submit 'Create' %>

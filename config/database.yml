@@ -49,3 +49,4 @@ production:
   pool: 5
   username: totally_rad
   password: radpass
+  host: localhost

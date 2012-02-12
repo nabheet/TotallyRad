@@ -1,28 +1,13 @@
-<h1>Showing user</h1>
+<h2>Showing user</h2>
 
-<label>
-  <span class="description">User Name:</span>
-  <span><%= @user.name %> </span>
-</label>
-<label>
-  <span class="description">Operator:</span>
-  <span><%= @user.operator %> </span>
-</label>
-<label>
-  <span class="description">Password:</span>
-  <span><%= @user.password %> </span>
-</label>
-<label>
-  <span class="description">Password Type:</span>
-  <span><%= @user.password_type %> </span>
-</label>
+<%= render :partial => "user", :locals => { :editable => false } %>
 
 <div class="buttonPanel">
     <%= link_to 'Edit', edit_user_path(@user) %>
     <%= link_to 'Back', users_path %>
 </div>
 
-<h1>Listing Auth History</h1>
+<h2>Listing Auth History</h2>
 
 <table>
   <tr>
@@ -34,7 +19,7 @@
     <th>Auth Timestamp</th>
   </tr>
 
-<% AuthStatus.find_by_sql(["SELECT * FROM radpostauth WHERE username = ? ORDER BY authdate DESC", @user.name]).each do |auth_status| %>
+<% @user.auth_history.each do |auth_status| %>
   <tr>
     <td><%= auth_status.name %></td>
     <td><%= auth_status.password %></td>

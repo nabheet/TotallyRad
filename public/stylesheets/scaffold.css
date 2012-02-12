@@ -21,6 +21,10 @@ h1, h2{
     padding: .5em;
 }
 
+h2 {
+    background-color: #0698fd;
+}
+
 table {
     border: .1em solid #000000;
     border-collapse: collapse;
@@ -108,7 +112,7 @@ label input {
 }
 
 #content {
-    width: 42.7em;
+    width: 42.4em;
     margin-left: .2em;
     padding: .5em;
     background-color: #6666ff;
@@ -120,6 +124,9 @@ label input {
     padding: .5em;
     background-color: #6666ff;
     display: block;
+}
+
+#content .buttonPanel {
 }
 
 #content .buttonPanel a, #content .buttonPanel input {
