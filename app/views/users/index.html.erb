@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Description</th>
     <th>User Name</th>
     <th>Operator</th>
     <th>Password</th>
@@ -11,6 +12,7 @@
 
 <% @users.each do |user| %>
   <tr>
+    <td><%= user.description %></td>
     <td><%= user.name %></td>
     <td><%= user.operator %></td>
     <td><%= user.password %></td>
