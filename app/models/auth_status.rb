@@ -10,8 +10,4 @@ class AuthStatus < ActiveRecord::Base
   def self.user_history(username)
     find(:all, :conditions => ["username = ?", username], :order => "authdate DESC")
   end
-
-  def self.group_history(groupname)
-    find(:all, :conditions => ["groupname = ?", groupname], :order => "authdate DESC")
-  end
 end
