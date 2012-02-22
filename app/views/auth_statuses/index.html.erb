@@ -15,7 +15,7 @@
     <td><%= auth_result.username %></td>
     <td><%= auth_result.pass %></td>
     <td><%= auth_result.reply %></td>
-    <td><%= auth_result.authdate %></td>
+    <td><%= auth_result.authdate.to_s(:datetime) %></td>
   </tr>
 <% end %>
 </table>

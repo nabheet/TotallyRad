@@ -26,7 +26,7 @@
     <td><%= auth_status.status %></td>
     <td><%= auth_status.calledstationid %></td>
     <td><%= auth_status.callingstationid %></td>
-    <td><%= auth_status.authdate %></td>
+    <td><%= auth_status.authdate.to_s(:datetime) %></td>
   </tr>
 <% end %>
 </table>
