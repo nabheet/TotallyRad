@@ -1,21 +1,14 @@
 <h2>Listing Auth Results</h2>
 
-<table>
-  <tr>
-    <th>Description</th>
-    <th>User Name</th>
-    <th>Password</th>
-    <th>Status</th>
-    <th>Auth Timestamp</th>
-  </tr>
+<ul data-role="listview">
 
 <% @auth_results.each do |auth_result| %>
-  <tr>
-    <td><%= auth_result.description %></td>
-    <td><%= auth_result.username %></td>
-    <td><%= auth_result.pass %></td>
-    <td><%= auth_result.reply %></td>
-    <td><%= auth_result.authdate.to_s(:datetime) %></td>
-  </tr>
+  <li>
+    Description: <%= auth_result.description %><br />
+    Username: <%= auth_result.username %><br />
+    Password: <%= auth_result.pass %><br />
+    Authorization Status: <%= auth_result.reply %><br />
+    Last Authorization Date: <%= auth_result.authdate.to_s(:datetime) %><br />
+  </li>
 <% end %>
-</table>
+</ul>

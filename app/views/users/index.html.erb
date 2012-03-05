@@ -1,25 +1,11 @@
 <h2>Listing users</h2>
 
-<table>
-  <tr>
-    <th>Description</th>
-    <th>User Name</th>
-    <th>Operator</th>
-    <th>Password</th>
-    <th>Password Type</th>
-    <th>Action</th>
-  </tr>
+<ul data-role="listview">
 
 <% @users.each do |user| %>
-  <tr>
-    <td><%= user.description %></td>
-    <td><%= user.name %></td>
-    <td><%= user.operator %></td>
-    <td><%= user.password %></td>
-    <td><%= user.password_type %></td>
-    <td><%= link_to 'Show', user %>
-        <%= link_to 'Edit', edit_user_path(user) %>
-        <%= link_to 'Delete', user, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <li>
+    <%= link_to user.description, user %>
+    <%= link_to 'Delete', user, :confirm => 'Are you sure?', :method => :delete %>
+  </li>
 <% end %>
-</table>
+</ul>

@@ -1,5 +1,9 @@
-<ul>
-  <li><%= link_to 'List Users', users_path %></li>
-  <li><%= link_to 'List Groups', groups_path %></li>
-  <li><%= link_to 'Auth Results', auth_statuses_path %></li>
-</ul>
+<div data-role="navbar" id="topNav">
+  <ul>
+    <li><%= link_to 'List Users', users_path %></li>
+    <li><%= link_to 'New user', new_user_path %></li>
+    <li><%= link_to 'List Groups', groups_path %></li>
+    <li><%= link_to 'Create New Group', new_group_path %></li>
+    <li><%= link_to 'Auth Results', auth_statuses_path %></li>
+  </ul>
+</div>
